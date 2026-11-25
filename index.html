@@ -6,15 +6,20 @@
   
   <!-- insert stylistic choices later -->
   <style>
-    
   
+    .page{
+      position: relative;
+      margin: auto;
+      max-width: 1200px;
+    }
+    
     h1 {
       font-family: "Inter", sans-serif;
       text-align: right;
       padding: 30px;
       padding-bottom: 0px;
       margin-bottom: 0px;
-      margin-right: 20px;
+      margin-right: 10px;
       
     }
     
@@ -28,6 +33,41 @@
       margin-right: 20px;
     }
     
+    #message{
+      border-radius: 10px;
+      position: absolute;
+      top: 200px;
+      right: 60px;
+      background-color: #DDD4EC;
+      text-align: center;
+      padding: 15px;
+      width: 120px;
+    }
+    a {
+      font-family: "Inter", sans-serif;
+      color: black;
+      text-decoration: none;
+      }
+      
+    #message:hover {
+      background-color: #9970E5;
+      }
+    
+    .record{
+      position: absolute
+    }
+    .record-main{
+    top: 150px;
+    left: 50%;
+    width: 600px;
+    margin-left: -300px;
+    }
+    
+    .record-top{
+    top: 0px;
+    left: 50%; 
+    }
+    
     body{
       background-color: #F7F7EA;
     }
@@ -38,6 +78,7 @@
   
 <body>
   
+  <div class="page">
   <h1> stephy's <br> music rotation </h1>
   <!--
 Code copied from: [https://www.w3schools.com/tags/tag_br.asp]
@@ -49,9 +90,22 @@ Date retrieved: [November 25, 2026]
   
   <h2>and I love music! my friends would <br> call me musically inclined...</h2>
 
+  <div id="message">
+  <a href="#">message me</a>
+  </div>
   
-  
-  
+<!--
+Code copied from: pClaude]
+Author: Claude
+Name: Positioning of Records
+Description: [brief description]
+Date retrieved: November 26
+-->
+  <img class="record record-main" src="mainrecord.png" alt="round black music vinyl">
+  <img class="record record-top" src="recordtop.png" alt="round black music vinyl">
+
+</div>
+    
   </body>
   
   
