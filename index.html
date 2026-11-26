@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <title>Stephy's Personal Music Site - GBDA228 Final</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
   
   <!-- insert stylistic choices later -->
   <style>
@@ -43,15 +47,24 @@
       padding: 15px;
       width: 120px;
     }
-    a {
+    
+    #message a {
       font-family: "Inter", sans-serif;
+      font-weight: 500;
       color: black;
       text-decoration: none;
       }
-      
-    #message:hover {
+    
+    #message a:hover{
+      padding: 10px;
+      width: 150px;
       background-color: #9970E5;
-      }
+      color: white;
+    }
+      
+    /*#message:hover {
+      background-color: #9970E5;
+      } */
     
     .record{
       position: absolute
@@ -76,6 +89,8 @@
     }
     
     #nav-bar {
+      /*position: fixed;*/
+      top: 150px;
       font-family: "Inter", sans-serif;
       text-align: left;
     }
@@ -89,6 +104,7 @@
     }
     
     #nav-bar a{
+      text-decoration: none;
       color: gray;
     }
     
@@ -102,17 +118,24 @@
       left: 30px;
     }
     
+    .me-picture {
+      position: absolute;
+      right: 0px;
+      bottom: -1300px;
+    }
+  
+    .about-me{
+      position: absolute; 
+      left: 80px;
+      top: 1000px;
+    }
+    
     body{
       background-color: #F7F7EA;
     }
-    
-    
-    
   
   </style>
-    
   </head>
-  
 <body>
   
   <div class="page">
@@ -138,9 +161,9 @@ Name: Positioning of Records
 Description: [brief description]
 Date retrieved: November 26
 -->
-  <img class="record record-main" src="mainrecord.png" alt="round black music vinyl">
-  <img class="record record-top" src="recordtop.png" alt="round black music vinyl">
-  <img class="record record-right" src="recordright.png" alt="round black music vinyl">
+  <img class="record record-main" src="main-page/mainrecord.png" alt="round black music vinyl">
+  <img class="record record-top" src="main-page/recordtop.png" alt="round black music vinyl">
+  <img class="record record-right" src="main-page/recordright.png" alt="round black music vinyl">
     
   <div id="nav-bar">
   <ul>
@@ -150,7 +173,11 @@ Date retrieved: November 26
     </ul>
   </div>
 
-  <img class="logo" src="logo.png" alt="purple logo displaying s l with flower design">
+  <img class="logo" src="main-page/logo.png" alt="purple logo displaying s l with flower design">
+  
+
+  <img class="me-picture" src="main-page/mepicture.png" alt="description of image">
+     <img class="about-me" src="main-page/aboutme.png" alt="description of image">
     
 </div>
     
